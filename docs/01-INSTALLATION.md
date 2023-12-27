@@ -6,6 +6,7 @@ We'll also be using [RedisInsight](https://redis.io/docs/stack/insight/) which i
 
 
 ## Installing Using Docker ##
+This section will walk you through running a Docker image with Docker Desktop. If you haven't used Docker Desktop, check out installation and usage instructions [here](https://www.docker.com/products/docker-desktop/).
 
 Installing with Docker is pretty easy. Just run the following command:
 
