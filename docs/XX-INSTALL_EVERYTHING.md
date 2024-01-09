@@ -51,7 +51,7 @@ We're gonna build a simple Express API. All the Express stuff is already there s
 If you haven't cloned this repo yet, do so. You're gonna need it:
 
 ```bash
-git clone git@github.com:guyroyse/beyond-the-cache.git
+git clone git@github.com:justincastilla/beyond-the-cache.git
 ```
 
 Note the folders:

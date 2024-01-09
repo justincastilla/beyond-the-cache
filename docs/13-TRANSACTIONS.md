@@ -29,7 +29,7 @@ Try it out by changing `site:config` after the WATCH but before you call MULTI:
 ```bash
 127.0.0.1:6379> WATCH site:config
 OK
-127.0.0.1:6379> HSET site:config email guy@guyroyse.com
+127.0.0.1:6379> HSET site:config email justin@redis.com
 (integer) 1
 127.0.0.1:6379> MULTI
 OK
@@ -50,7 +50,7 @@ This time it returned `(nil)`, which means that the transaction failed and your 
 3) "name"
 4) "bigfoot-tracker-api"
 5) "email"
-6) "guy@guyroyse.com"
+6) "justin@redis.com"
 ```
 
 In our particular case, the use of WATCH works but is overkill. Since we're only manipulating a single key, we don't really need to WATCH it at all. After all, if someone changes the key before we call EXEC, we'll overwrite those changes. But if they wrote them the millisecond before we called WATCH the same things would happen. So, the WATCH is superfluous and we can get away with just using MULTI and EXEC.
