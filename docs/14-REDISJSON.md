@@ -122,7 +122,7 @@ We'll cover one last command here: [JSON.DEL](https://redis.io/commands/json.del
 
 Our first user, Lyle, has been removed.
 
-If a JSONPath matches multiple properties in the doucment, everything matching will be removed. Let's remove the `lastName` property for all of our users:
+If a JSONPath matches multiple properties in the document, everything matching will be removed. Let's remove the `lastName` property for all of our users:
 
 ```bash
 127.0.0.1:6379> JSON.DEL bigfoot:users $.users[*].lastName

@@ -22,7 +22,7 @@ Here's the various endpoints for this section. We'll add more endpoints to it in
 
 ## Optimizing `curl` ##
 
-We've been typing in all the data for `curl` for the last view examples, and, frankly, it's kinda tedious. So, in the **`data`** folder, there are a few thousand JSON files containing Bigfoot sightings. We'll tell `curl` to load some of these instead of typing in the data manually for all the examples in this section.
+We've been typing in all the data for `curl` for the last view examples, and, frankly, it's kinda tedious. So, in the **`data`** folder, there are a few thousand JSON files containing Bigfoot sightings. We'll tell `curl` to load some of these instead of typing in the data manually for all the examples in this section. To make this work, ensure that you are in the root directory of this repository.
 
 
 ## Adding a New Sighting ##
