@@ -8,5 +8,6 @@ const name = process.env.npm_package_name
 const version = process.env.npm_package_version
 
 statusRouter.get('/', async (req, res) => {
-  res.send(`"NOT IMPLEMENTED"`)
+  const pingResponse = await redis.ping()
+  res.send({ name, version, pingResponse })
 })
